@@ -7,10 +7,10 @@ from PIL import Image
 import os
 
 api = Leapcell(
-    "lpcl_3079002420.21e580a433ce0b1cae979ddfd8b33021", "http://localhost:8080"
+    os.environ.get("LEAPCELL_API_KEY"),
 )
 
-table = api.table("salamer/Ecommerce", "tbl1702010602858938368", name_type="name")
+table = api.table("salamer/myblog", "tbl1702369503563026432", name_type="name")
 
 
 app = Flask(__name__)
@@ -26,4 +26,4 @@ def product(id):
     return render_template('item.html', title='Welcome', product=item)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(debug=False, port=8000)
