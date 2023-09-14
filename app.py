@@ -1,9 +1,5 @@
 from flask import Flask, render_template
 from leapcell import Leapcell
-import pandas as pd
-import requests
-from io import BytesIO
-from PIL import Image
 import os
 
 api = Leapcell(
