@@ -6,7 +6,7 @@ api = Leapcell(
     os.environ.get("LEAPCELL_API_KEY"),
 )
 
-table = api.table("salamer/myblog", "tbl1702369503563026432", name_type="name")
+table = api.table("salamer/myblog", "tbl1707363939983331328", name_type="name")
 
 
 app = Flask(__name__)
